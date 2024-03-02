@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 // Right click on the script name and hit "Run" to execute
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
+import { expect } from "chai";
+import * as hardhat from "hardhat"
 
 describe("Multiple Contracts Test", function () {
   let DummyPlayer;
@@ -27,7 +27,7 @@ describe("Multiple Contracts Test", function () {
 
 
     DummyPlayer = await ethers.getContractFactory("DummyPlayer");
-    dummyPlayer = await DummyPlayer.deploy();
+    dummyPlayer = await DummyPlayer.deploy(owner);
     await dummyPlayer.deployed();
 
 
