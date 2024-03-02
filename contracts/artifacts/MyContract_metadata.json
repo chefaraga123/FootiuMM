@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_pricingLibrary",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "input",
+						"type": "uint256"
+					}
+				],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rating",
+						"type": "uint256"
+					}
+				],
+				"name": "lockUpNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "lockedNFTs",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "rating",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "locked",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "points",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pricingLibrary",
+				"outputs": [
+					{
+						"internalType": "contract PlayerPricing",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FootiuMM.sol": "MyContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FootiuMM.sol": {
+			"keccak256": "0x350cdcfb1d941f87b24d6375b04501fb5ca33626cefe8aed3df477ffbbfd72c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5333b79b11e2a9597b43da45a023af1f656861318c836572af54279fa8d5fbe1",
+				"dweb:/ipfs/QmboF5wZftGLd6wSqnwwpwXwSVvErjgQahVCPj6Z5J6Tm5"
+			]
+		},
+		"contracts/PlayerPricing.sol": {
+			"keccak256": "0xace62d70eaa33880ab72aed20d468f217cc6d66e41beec29d40de0f5598b475a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://297fed1ad0e80a5a3861e4cb5ab7c7e58117ff5f5148407444cedaf8feb55a41",
+				"dweb:/ipfs/QmQS7WURLd7DmEreznMWJx9dKEFr9yc6MgpXajSwtFqHGA"
+			]
+		}
+	},
+	"version": 1
+}

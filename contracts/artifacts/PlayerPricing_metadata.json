@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "input",
+						"type": "uint256"
+					}
+				],
+				"name": "calculatePrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/PlayerPricing.sol": "PlayerPricing"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/PlayerPricing.sol": {
+			"keccak256": "0xace62d70eaa33880ab72aed20d468f217cc6d66e41beec29d40de0f5598b475a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://297fed1ad0e80a5a3861e4cb5ab7c7e58117ff5f5148407444cedaf8feb55a41",
+				"dweb:/ipfs/QmQS7WURLd7DmEreznMWJx9dKEFr9yc6MgpXajSwtFqHGA"
+			]
+		}
+	},
+	"version": 1
+}
